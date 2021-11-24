@@ -141,9 +141,20 @@ public class CollectionsConsoleApp extends PersonConsoleApp {
 
     private void showMapOperations(List<MyPerson> peopleList, int numberOfPeople, MyPerson toRemove) {
         if (chosenMap != null) {
+            long addingStartTime = System.nanoTime();
             addPeopleToMap(peopleList, numberOfPeople);
+            UI.printMessage("Czas dodawania osób do kolekcji: " +
+                    (System.nanoTime() - addingStartTime));
+
+            long displayingStartTime = System.nanoTime();
             printMap();
+            UI.printMessage("Czas wyświetlania osób w kolekcji: " +
+                    (System.nanoTime() - displayingStartTime));
+
+            long removingStartTime = System.nanoTime();
             chosenMap.remove(toRemove);
+            UI.printInfoMessage("Czas usuwania losowej osoby z kolekcji: " +
+                    (System.nanoTime() - removingStartTime));
         }
     }
 
