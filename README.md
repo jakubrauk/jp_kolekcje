@@ -7,12 +7,20 @@ klasa ConsoleUserDialog - konsolowy interfejs użytkownika
 
 klasa PersonConsoleApp - klasa i funkcja główna
 
-# TODO
+klasa CollectionsConsoleApp - dziecko PersonConsoleApp 
+(Przystosowanie aplikacji konsolowej do pokazania działania kolekcji)
 
-1. Ładowanie kilku różnych osób (Person) przykładowo do pliku
-2. Rozszerzenie klasy Person o metody equals() oraz hashCode()
-3. Pokazanie działania różnych kolekcji (różnic między nimi)
-4. Opcjonalnie pokazać różnice czasowe
+klasa MyPerson - Dziecko klasy Person (dodanie potrzebnych metod)
+
+klasa MyPersonInput - Klasa odpowiedzialna za przechowywanie obiektów MyPerson
+
+### TODO
+
+1. Ładowanie kilku różnych osób (Person)
+2. Opcje w aplikacji konsolowej
+3. Rozszerzenie klasy Person o metody equals()
+4. Pokazanie działania różnych kolekcji (różnic między nimi)
+5. Opcjonalnie pokazać różnice czasowe
 
 ### rodzaje kolekcji do pokazania
 
